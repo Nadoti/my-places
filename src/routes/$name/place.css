@@ -1,4 +1,153 @@
+.page-container {
+  width: 100%;
+  height: 100vh - 22px;
+  /* overflow: hidden; */
+}
 
 .container {
-  
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.contents {
+  width: 100%;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  height: 100%;
+}
+
+.info-place-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-place-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-place-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.details-place-information-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.details-place-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.details-place-informations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.details-place-informations-region-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.details-place-informations-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.details-place-circle {
+  position: relative;
+  margin-right: 2px;
+}
+
+.details-place-circle::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.details-place-informations-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.gallery-container {
+  width: 100%;
+  height: 100%;
+  background: hsl(50deg 100% 50%);
+  border-radius: 8px 0 12px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-photos-user-container {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.gallery-photos-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.gallery-photos-container {
+  width: 100%;
+  height: 20%;
+  /* height: 100%; */
+  /* min-height: 30%; */
+  /* max-height: 30%; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: red;
+  /* overflow-x: auto; */
+  /* overflow-y: auto; */
+  overflow: auto;
+}
+
+.gallery-videos-container {
+  width: 100%;
+  height: 30%;
+  /* height: 100%; */
+  /* min-height: 30%; */
+  /* max-height: 30%; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: red;
+  /* overflow-x: auto; */
+  /* overflow-y: auto; */
+  overflow: auto;
+}
+
+.gallery-photos {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 6px;
 }

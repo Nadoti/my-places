@@ -6,8 +6,6 @@ export function Header() {
     <header>
       <nav>
         <h1>Logo</h1>
-
-
       </nav>
 
     </header>
